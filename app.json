@@ -2,12 +2,13 @@
   "expo": {
     "name": "assignment",
     "slug": "assignment",
+    "scheme": "manav",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/iconn.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splashh.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,10 +22,35 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hospitalmanav.codex",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Hospital-app to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "09f62334-6a06-4bba-a7dd-daf93981e19b"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/09f62334-6a06-4bba-a7dd-daf93981e19b"
     }
   }
 }
